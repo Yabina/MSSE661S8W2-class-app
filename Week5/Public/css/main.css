@@ -1,0 +1,19 @@
+.tasklist-item-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .tasklist-checkbox {
+    width: 25px;
+    display: flex;
+  }
+  
+  .tasklist-name,
+  .task-assignedTo,
+  .task-date,
+  .tasklist-type {
+    width: fit-content;
+  }
+

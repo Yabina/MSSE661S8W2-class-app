@@ -1,0 +1,17 @@
+{
+  "name": "week5",
+  "version": "1.0.0",
+  "description": "Have our website talk to the back-end service and display data.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
