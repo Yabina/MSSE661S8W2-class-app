@@ -1,8 +1,7 @@
+//document.addEventListener("DOMContentLoaded", function () {
+  
 const access_token = storageHasData() ? getStorage('access_token') : '';
 const token = `Bearer ${access_token}`;
-
-
-
 
 const _get = async (url) => {
   const res = await fetch(url, {
@@ -37,3 +36,4 @@ const _put = async (url, data) => {
   });
   return res.json();
 };
+

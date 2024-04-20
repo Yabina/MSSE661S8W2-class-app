@@ -119,10 +119,19 @@
 //    });
 // }
 // })();
+
+(async () => {
+    const tasklist = await getTasklist();
+    console.log(tasklist);
+
 if (tasklist.length) {
   const div = document.getElementById('tasklist');
   const loadingDiv = div.childNodes[1];
+   
+// Replace 'loading...' with the table
+div.replaceChild(table, loadingDiv);
 
+  tasklist.map((task) => {
   const table = document.createElement('table'); // Create table element
   table.className = 'task-item-block';
 
@@ -137,7 +146,7 @@ if (tasklist.length) {
   table.appendChild(headerRow);
 
   // Create table body rows
-  checklist.forEach((task) => {
+  tasklist.forEach((task) => {
       const tr = document.createElement('tr');
 
       // Create table cells for item, type, and created date
@@ -177,6 +186,8 @@ if (tasklist.length) {
       table.appendChild(tr);
   });
 
-  // Replace 'loading...' with the table
-  div.replaceChild(table, loadingDiv);
+  
 }
+
+)};
+ }) ();

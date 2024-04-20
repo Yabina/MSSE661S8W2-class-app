@@ -6,12 +6,19 @@ const setStorage = (key, data) => {
   
   const getStorage = (key) => {
     const encodedData = localStorage.getItem(key);
+    if (!encodedData) return "";
     const decodedData = atob(encodedData);
-    return JSON.parse(decodedData); 
+    return decodedData; 
   };
   
-  const clearStorage = (key) => {
-    localStorage.removeItem(key);
+  const clearStorage = () => {
+    localStorage.clear();
   };
   
   const storageHasData = () => localStorage.length > 0;
+
+  // const logout = () => {
+  //   clearStorage(key);
+  //   window.location.href = "/login.html";
+  // };
+  

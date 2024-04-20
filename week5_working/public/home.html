@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/app.css" />
+     <!-- Bootstrap CSS -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+   />
+  </head>
+  <body>
+    <div class="main wrapper">
+      <header>
+        <nav  class="navbar navbar-expand-lg navbar-dark bg-primary"
+        data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="./about.html">About</a>
+             </ul>   
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button class="btn btn-outline-light" onclick="logout()">
+                  Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>  
+        </nav>
+    </div>
+      </header>
+
+      <br /><br />
+    <div class="container">
+      <h2  style="text-align: center">User Details</h2>
+      <div class="card">
+        <table class="table table-hover" id="user-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+      <footer>
+        <p>Author: <a href="https://github.com/Yabina/">Yeabsira Desta</a></p>
+      </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/simple-storage.js"></script>
+  </body>
+</html>
