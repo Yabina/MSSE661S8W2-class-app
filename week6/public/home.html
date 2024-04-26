@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -29,11 +30,11 @@
       </nav>
     </header>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="task-form">
         <form>
           <div class="form-row">
-            <div class="col-md-6">
+            <div class="col-auto">
               <label class="sr-only" for="formInputTaskName">Task Name</label>
               <input
                 id="formInputTaskName"
@@ -43,7 +44,7 @@
                 placeholder="Task name"
               />
             </div>
-            <div class="col-md-3">
+            <div class="mb-3" >
               <label class="sr-only" for="formSelectStatus">Status</label>
               <select
                 id="formSelectStatus"
@@ -58,23 +59,79 @@
               <button
                 type="submit"
                 class="btn btn-primary"
-                onclick="doAddTask(event)"
+                onclick="doAddTask(event)" -->
+
+
+                <div class="container mt-5">
+                  <h2>Task Manager</h2>
+                  <form id="task-form">
+                    <div class="form-group">
+                      <label for="taskName">Task Name:</label>
+                      <input type="text" class="form-control" id="taskName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="taskDescription">Task Description:</label>
+                      <textarea class="form-control" id="taskDescription" rows="3"></textarea>
+                    </div>
+                <div class="form-group">
+                       <label for="taskCreatedDate">Task Created Date:</label>
+                        <input type="date" id="taskCreatedDate" required> <label for="taskDueDate">Task Due Date:</label>
+                    <input type="date" id="taskDueDate" required> <label for="taskAssignedTo">Task Assigned To:</label>
+                        <input type="text" id="taskAssignedTo" required><br>
+                    </div>
+                
+                <div class="form-group" >
+                                      <label class="sr-only" for="formSelectStatus">Status</label>
+                                      <select
+                                        id="formSelectStatus"
+                                        class="custom-select mr-sm-2"
+                                        name="task-name"
+                                      >
+                                        <option value="Not Started" selected>Not Started</option>
+                                        <option value="Pending" selected>Pending</option>
+                                        <option value="Completed">Completed</option>
+                                      </select>
+                                    </div>    
+                
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                  </form>
+                
+                  <table class="table mt-4">
+                    <thead>
+                      <tr>
+                        <th>Task Name</th>
+                        <th>Task Description</th>
+                        <th>Task Created Date</th>
+                        <th>Task Due Date</th>
+                        <th>Task Assigned To</th>
+                        <th>Task Status</th>
+                      </tr>
+                    </thead>
+
+
+                    <tbody id="tasks">
+                      Tasks will be dynamically added here
+                    </tbody>
+                  </table>
+                </div>
+                
+<!--                 
               >
                 ADD
               </button>
             </div>
           </div>
         </form>
-      </div>
-
+      </div> -->
+<!-- 
       <div id="tasks">
         <div>Loading...</div>
       </div>
-    </div>
+    </div> -->
 
     <footer>
       <div class="author">
-        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+        <p>Author: <a href="https://github.com/Yabina/">Yeabsira Desta</a></p>
       </div>
     </footer>
     <script src="./src/api.config.js"></script>

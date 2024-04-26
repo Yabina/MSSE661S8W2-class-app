@@ -18,3 +18,14 @@ const setStorage = (key, data) => {
   };
   
   const storageHasData = () => localStorage.length > 0;
+  // const getStorage = (key) => {
+  //   const encodedData = localStorage.getItem(key);
+  //   const decodedData = atob(encodedData);
+  //   return JSON.parse(decodedData); // {}
+  // };
+  
+  // const clearStorage = (key) => {
+  //   localStorage.removeItem(key);
+  // };
+  
+  // const storageHasData = () => localStorage.length > 0;
