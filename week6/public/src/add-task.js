@@ -30,7 +30,7 @@ const doAddTask = async (e) => {
 
   try {
       // Add task
-      const res = await addTask({ task_name, task_description, task_assigned_to, task_due_date, status });
+      const res = await createTask({ task_name, task_description, task_assigned_to, task_due_date, status });
 
       // Check if task was added successfully
       if (res !== null) {
