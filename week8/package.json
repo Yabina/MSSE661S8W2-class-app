@@ -1,0 +1,23 @@
+{
+  "name": "week8",
+  "version": "1.0.0",
+  "description": "- Worked on the Task form\r - used the same form as the teached but added update capabilities to it.\r - tested with Jasmine \r - Added a test for updateTask\r - finally got everything to work",
+  "main": "index.js",
+  "scripts": {
+    "scripts": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}
