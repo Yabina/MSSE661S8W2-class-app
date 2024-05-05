@@ -1,7 +1,10 @@
-# Module 7 - Introduction to UX Design
+# Module 8 - Finishing with WEb Framworks
 
-- Worked on the Task form
-- used the same form as the teached but added update capabilities to it.
-- tested with Jasmine 
-- Added a test for updateTask
+- Worked on downloading Openssl
+- generating CA
+- generating Server.key
+- generating cert
+- genarating self signed cert
+- adding the pieces to the app to make it use https
+- fixed errors with the open ssl and  PEM file
 - finally got everything to work
